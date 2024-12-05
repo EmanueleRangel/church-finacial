@@ -1,0 +1,6 @@
+@financial_church_HostAddress = http://localhost:5261
+
+GET {{financial_church_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
