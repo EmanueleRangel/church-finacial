@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ManuRigaud/.nuget/packages/": {}
+    "/home/manu/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ManuRigaud/Desktop/projects/financial-church/financial-church.csproj",
+      "projectUniqueName": "/home/manu/Desktop/projects/church-finacial/financial-church.csproj",
       "projectName": "financial-church",
-      "projectPath": "/Users/ManuRigaud/Desktop/projects/financial-church/financial-church.csproj",
-      "packagesPath": "/Users/ManuRigaud/.nuget/packages/",
-      "outputPath": "/Users/ManuRigaud/Desktop/projects/financial-church/obj/",
+      "projectPath": "/home/manu/Desktop/projects/church-finacial/financial-church.csproj",
+      "packagesPath": "/home/manu/.nuget/packages/",
+      "outputPath": "/home/manu/Desktop/projects/church-finacial/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ManuRigaud/.nuget/NuGet/NuGet.Config"
+        "/home/manu/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -551,7 +551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
