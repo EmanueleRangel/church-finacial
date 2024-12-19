@@ -1,3 +1,7 @@
+using ChurchFinanceSystem.Repositories;
+using ChurchFinanceSystem.Services;
+using Microsoft.EntityFrameworkCore;
+
 namespace ChurchFinanceSystem
 {
     public class Startup

@@ -5,13 +5,23 @@ namespace ChurchFinanceSystem.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
 
-        public DbSet<User> Users { get; set; }  // Representação da tabela Users
-        public DbSet<Congregation> Congregations { get; set; }  // Representação da tabela Congregations
-        public DbSet<Invoice> Invoices { get; set; }  // Representação da tabela Invoices
-        public DbSet<InvoiceCategory> InvoiceCategories { get; set; }  // Representação da tabela InvoiceCategories
+        // DbSet para suas entidades
+        public DbSet<InvoiceCategory> InvoiceCategories { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Congregation> Congregations { get; set; }
 
-        // Configurações adicionais podem ser feitas aqui (como tabelas auxiliares ou relacionamentos)
+        // Aqui você pode configurar mais aspectos, como relações ou validações
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Adicionar configurações específicas, como restrições, etc.
+        }
     }
 }
