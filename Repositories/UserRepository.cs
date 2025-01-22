@@ -6,12 +6,13 @@ using System.Linq;
 
 namespace ChurchFinanceSystem.Repositories
 {
-    public class UserRepository(ApplicationDbContext context) : IUserRepository
+    public class UserRepository : IUserRepository
     {
-        private readonly ApplicationDbContext _context = context;
+        private readonly ApplicationDbContext _context;
 
-        public UserRepository()
+        public UserRepository(ApplicationDbContext context)
         {
+            _context = context;
         }
 
         // Retorna todos os usuários
@@ -52,7 +53,13 @@ namespace ChurchFinanceSystem.Repositories
         }
     }
 
-    internal class ApplicationDbContext
+    public class ApplicationDbContext
     {
+        public DbSet<User> Users { get; internal set; }
+
+        internal void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
